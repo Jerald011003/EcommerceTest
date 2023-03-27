@@ -181,4 +181,4 @@ def getUsers(request):
     return Response(serializer.data)
 
 def index(request):
-    return render(request, 'index.html')
+    return HttpResponse(open(settings.BASE_DIR / 'build' / 'index.html').read())

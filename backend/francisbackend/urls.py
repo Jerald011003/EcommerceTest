@@ -20,10 +20,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+from base.views import index
+
 urlpatterns = [
+    path('', index, name='index'),
     path('admin/', admin.site.urls),
     path('api/', include('base.urls')),
-        
+ 
 
 ]
 

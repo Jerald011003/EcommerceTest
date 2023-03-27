@@ -26,4 +26,5 @@ urlpatterns = [
     path('users', views.getUsers, name="users"),
     # path('update', views.UpdateUserProfileView, name='updateuser'),
      # path('profile/update', views.updateUserProfile, name="user-profile-update"), 
+    
 ]
