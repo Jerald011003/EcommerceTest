@@ -27,6 +27,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 # from .models import UserProfile
 # from .serializer import UserProfileSerializer
+from django.shortcuts import render
 
 @api_view(['GET'])
 def getRoutes(request):
@@ -178,3 +179,6 @@ def getUsers(request):
     users = User.objects.all()
     serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
+
+def index(request):
+    return render(request, 'index.html')
