@@ -15,7 +15,3 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'francisbackend.settings')
 
 application = get_wsgi_application()
 
-import sys
-path = '/home/coninegaming/EcommerceTest'
-if path not in sys.path:
-    sys.path.insert(0, path)
