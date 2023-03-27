@@ -180,5 +180,5 @@ def getUsers(request):
     serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
 
-def index(request):
-    return HttpResponse(open(settings.BASE_DIR / 'build' / 'index.html').read())
+# def index(request):
+#     return HttpResponse(open(settings.BASE_DIR / 'build' / 'index.html').read())
